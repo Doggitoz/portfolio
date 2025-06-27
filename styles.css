@@ -50,6 +50,72 @@ p {
 
 }
 
+/* Cherry Blossom Intro Section ----------------------------------------------------------- */
+.cherry-blossom-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('images/sakura_branch.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.sakura-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.image {
+  position: absolute;
+  width: 110%;
+  height: 200%; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-size: cover; /* or 'cover' depending on the effect you want */
+  background-position: center;
+  /*transition: transform 0.2s ease-out, filter 0.2s ease-out;*/
+}
+
+.top-petals {
+  top: 0;
+  background-image: url('images/sakura_petals_top.png');
+}
+
+.bottom-petals {
+  bottom: 0;
+  background-image: url('images/sakura_petals_bottom.png');
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 8px;
+  z-index: 15;
+}
+
+.intro-text h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.intro-text p {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+
 /* About Me ---------------------------------------------------------------------------------- */
 .about-me p {
   padding: 20px;
@@ -66,6 +132,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   width: 90%;
+  height: auto;
   align-items: center;
 }
 
@@ -77,7 +144,8 @@ p {
   transition: transform 0.2s;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px;
+  height: 500px;
+  width: auto;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -88,13 +156,6 @@ p {
   color: #E0E0E0;
 }
 
-.grid-item p {
-  text-align: left;
-  font-size: large;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
 .grid-item h2 {
   text-decoration: none;
   color: #D989AE;
@@ -103,17 +164,22 @@ p {
   padding-right: 5%;
 }
 
+.grid-item p {
+  text-align: left;
+  font-size: large;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .image-container {
-  padding: 2%;
+  padding: 1%;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  max-width: 96%; /* Adjust as needed */
-  height: auto;
-  overflow: visible;
-  pointer-events: none; /* optional if image shouldn't be interactive */
+  width: 98%;
+  flex: 1;
+  overflow: hidden;
 }
 
 
@@ -231,73 +297,6 @@ ul.icons {
 ul.icons li {
   display: inline-block;
   padding: 1em;
-}
-
-
-
-/* Cherry Blossom Section */
-.cherry-blossom-section {
-  position: relative;
-  height: 100vh;
-  background-image: url('images/sakura_branch.png');
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.sakura-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.image {
-  position: absolute;
-  width: 110%;
-  height: 300%; /* Adjust as needed */
-  background-repeat: no-repeat;
-  background-size: cover; /* or 'cover' depending on the effect you want */
-  background-position: center;
-  /*transition: transform 0.2s ease-out, filter 0.2s ease-out;*/
-}
-
-.top-petals {
-  top: 0;
-  background-image: url('images/sakura_petals_top.png');
-}
-
-.bottom-petals {
-  bottom: 0;
-  background-image: url('images/sakura_petals_bottom.png');
-}
-
-.intro-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-size: 2rem;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 1rem;
-  border-radius: 8px;
-  z-index: 2;
-}
-
-.intro-text h1 {
-  margin: 0;
-  font-size: 3rem;
-}
-
-.intro-text p {
-  margin-top: 0.5rem;
-  font-size: 1.5rem;
 }
 
 /* Functionality */
