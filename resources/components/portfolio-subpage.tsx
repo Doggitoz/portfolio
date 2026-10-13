@@ -1,36 +1,67 @@
-import React from 'react';
-import { portfolioItems } from '../data/portfolio-items';
+import { portfolioItems } from "../data/portfolio-items";
 
-const PortfolioSubpage: React.FC = () => {
+export default function PortfolioSubpage() {
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Portfolio</h1>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
+    <section className="work-section" id="work" aria-labelledby="work-title">
+      <div className="section-heading">
+        <div>
+          <p className="eyebrow">A few things made with care</p>
+          <h2 id="work-title">Things I&apos;ve made<span>.</span></h2>
+        </div>
+        <p className="section-aside">
+          Still making more
+          <br />
+          <span>One project at a time</span>
+        </p>
+      </div>
+      <p className="work-intro">
+        Different forms, different people. The question underneath is usually
+        the same: can this make someone&apos;s life a little better?
+      </p>
+
+      <div className="project-grid">
         {portfolioItems.map((item, index) => (
-          <div
-            key={index}
-            style={{
-              border: '1px solid #ccc',
-              borderRadius: '8px',
-              padding: '16px',
-              maxWidth: '300px',
-            }}
-          >
-            <img
-              src={item.imageUrl}
-              alt={item.title}
-              style={{ width: '100%', borderRadius: '8px' }}
-            />
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-            <a href={item.subpage} style={{ color: 'blue', textDecoration: 'underline' }}>
-              Learn More
-            </a>
-          </div>
+          <article className="project-card" key={item.title}>
+            <div className={`project-art project-art-${item.art}`} aria-hidden="true">
+              <span className="project-number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span className="project-art-caption">{item.artCaption}</span>
+              <div className="project-art-scene">
+                <span className="scene-sun" />
+                <span className="scene-shape scene-shape-one" />
+                <span className="scene-shape scene-shape-two" />
+                <span className="scene-shape scene-shape-three" />
+                <span className="scene-ground" />
+              </div>
+              <span className="project-art-bottom">{item.category}</span>
+            </div>
+
+            <div className="project-details">
+              <p className="project-category">{item.category}</p>
+              <h3>{item.title}</h3>
+              <p className="project-description">{item.description}</p>
+              <p className="project-role">
+                <span>My part</span>
+                {item.role}
+              </p>
+              <p className={`project-note project-note-${item.art}`}>
+                {item.note}
+              </p>
+              {item.href && (
+                <a
+                  className="project-link"
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {item.linkLabel} <span aria-hidden="true">↗</span>
+                </a>
+              )}
+            </div>
+          </article>
         ))}
       </div>
-    </div>
+    </section>
   );
-};
-
-export default PortfolioSubpage;
+}
