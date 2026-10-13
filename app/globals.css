@@ -474,6 +474,12 @@ a:focus-visible {
   background: linear-gradient(165deg, #ccd9d1 0%, #b9c9b5 62%, #aab99f 100%);
 }
 
+.project-art-games {
+  background:
+    radial-gradient(ellipse at 50% 57%, rgb(129 157 119 / 30%), transparent 46%),
+    linear-gradient(155deg, #314b3d, #20392f 68%, #172c25);
+}
+
 .project-number,
 .project-art-bottom {
   position: absolute;
@@ -682,6 +688,60 @@ a:focus-visible {
   z-index: 2;
   height: 19%;
   background: #455f4d;
+}
+
+.project-art-games .project-art-caption,
+.project-art-games .project-number,
+.project-art-games .project-art-bottom {
+  color: #e1e8d3;
+}
+
+.project-art-games .scene-sun {
+  top: 10%;
+  right: 22%;
+  width: 17%;
+  background: #e4dba9;
+  box-shadow: 0 0 26px rgb(228 219 169 / 30%);
+}
+
+.project-art-games .scene-shape-one {
+  bottom: 19%;
+  left: -10%;
+  width: 80%;
+  height: 67%;
+  background: #526d56;
+  clip-path: polygon(0 100%, 0 63%, 18% 43%, 28% 58%, 49% 7%, 70% 59%, 84% 38%, 100% 68%, 100% 100%);
+}
+
+.project-art-games .scene-shape-two {
+  right: -12%;
+  bottom: 19%;
+  width: 76%;
+  height: 53%;
+  background: #405d4a;
+  clip-path: polygon(0 100%, 23% 39%, 38% 61%, 67% 0, 100% 100%);
+}
+
+.project-art-games .scene-shape-three {
+  z-index: 2;
+  top: 27%;
+  left: 44%;
+  width: 12%;
+  aspect-ratio: 1;
+}
+
+.project-art-games .scene-shape-three::after {
+  display: block;
+  color: #f0e5b7;
+  content: "✦";
+  font-size: 24px;
+  line-height: 1;
+}
+
+.project-art-games .scene-ground {
+  z-index: 1;
+  height: 19%;
+  background: #263f32;
 }
 
 .project-details {
