@@ -39,9 +39,9 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow">Maker · creative · team-builder</p>
             <h1 id="hero-title">
-              I make things.
+              I build software.
               <span className="hero-subtitle">
-                Software just happens to be my medium.
+                With people, for people.
               </span>
             </h1>
             <p className="hero-description">
