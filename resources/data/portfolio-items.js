@@ -1,12 +1,12 @@
 export const portfolioItems = [
     {
         title: "dotto digital",
-        category: "Local web studio · in progress",
+        category: "Digital presence partner · in progress",
         art: "dotto",
         artCaption: "A city is made of its people",
-        description: "A solo venture building websites for local businesses and reaching out to communities. I want to help independent places connect with more people while building a sustainable entrepreneurial income.",
-        role: "Sole developer and community outreach.",
-        note: "Helping people discover the local places that make a community feel like home.",
+        description: "A digital presence partner for independent and local businesses, helping them be easier to find, build trust, and make it simple for customers to connect. Websites are the foundation, supported by ongoing maintenance, SEO and local search visibility, hosting, analytics, integrations, and automation that bring a business's online presence together.",
+        role: "Sole developer, digital infrastructure, and community outreach.",
+        note: "Business owners focus on running their business; dotto digital handles the technology behind their online presence so they can connect with more people in their communities.",
         href: "https://web.dottostudios.com",
         linkLabel: "Visit dotto digital",
     },
