@@ -9,9 +9,7 @@ export default function PortfolioSubpage() {
           <h2 id="work-title">Things I&apos;ve made<span>.</span></h2>
         </div>
         <p className="section-aside">
-          Still making more
-          <br />
-          <span>One project at a time</span>
+          I&apos;m always working on something new.
         </p>
       </div>
       <p className="work-intro">

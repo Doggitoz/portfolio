@@ -345,18 +345,6 @@ a:focus-visible {
   transform: scaleX(-1) rotate(28deg);
 }
 
-.forest-note {
-  position: absolute;
-  z-index: 4;
-  right: 9%;
-  bottom: 7%;
-  color: #e5e4d1;
-  font-family: var(--font-serif);
-  font-size: 12px;
-  font-style: italic;
-  letter-spacing: 0.02em;
-}
-
 .soft-divider {
   display: flex;
   width: min(100% - 96px, 1320px);
@@ -423,13 +411,6 @@ a:focus-visible {
   font-style: italic;
   line-height: 1.8;
   text-align: right;
-}
-
-.section-aside span {
-  color: var(--forest);
-  font-family: var(--font-sans);
-  font-size: 9px;
-  font-style: normal;
 }
 
 .work-intro {
@@ -959,25 +940,6 @@ a:focus-visible {
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.about-decoration {
-  position: absolute;
-  right: 7%;
-  bottom: 47px;
-  display: grid;
-  width: 83px;
-  height: 83px;
-  place-content: center;
-  border: 1px solid rgb(205 217 184 / 42%);
-  border-radius: 50%;
-  color: #c7d1ac;
-  font-family: var(--font-serif);
-  font-size: 9px;
-  font-style: italic;
-  line-height: 1.4;
-  text-align: center;
-  transform: rotate(-11deg);
-}
-
 .contact-section {
   position: relative;
   overflow: hidden;
@@ -1002,11 +964,12 @@ a:focus-visible {
 .contact-section > p:not(.eyebrow) {
   position: relative;
   z-index: 1;
-  margin: 19px 0 24px;
+  max-width: 730px;
+  margin: 19px auto 24px;
   color: var(--muted);
   font-family: var(--font-serif);
   font-size: 15px;
-  font-style: italic;
+  line-height: 1.7;
 }
 
 .contact-links {
@@ -1111,13 +1074,6 @@ a:focus-visible {
   color: var(--forest);
 }
 
-.site-footer p {
-  margin: 0;
-  font-family: var(--font-serif);
-  font-size: 11px;
-  font-style: italic;
-}
-
 @media (max-width: 900px) {
   .site-header,
   .site-footer,
@@ -1164,14 +1120,6 @@ a:focus-visible {
     grid-template-columns: 1fr 1fr;
     gap: 7%;
     padding: 83px 38px 98px;
-  }
-
-  .about-decoration {
-    right: 4%;
-    bottom: 22px;
-    width: 68px;
-    height: 68px;
-    font-size: 8px;
   }
 }
 
@@ -1310,11 +1258,6 @@ a:focus-visible {
     font-size: 11px;
   }
 
-  .about-decoration {
-    right: 19px;
-    bottom: 11px;
-  }
-
   .contact-section {
     padding: 75px 24px 78px;
   }
@@ -1335,10 +1278,6 @@ a:focus-visible {
 
   .site-footer {
     min-height: 74px;
-  }
-
-  .site-footer p {
-    display: none;
   }
 
   .footer-socials {
@@ -1387,11 +1326,6 @@ a:focus-visible {
 .section-aside {
   color: var(--muted);
   font-size: 14px;
-}
-
-.section-aside span {
-  color: var(--moss-light);
-  font-size: 12px;
 }
 
 .project-number,
@@ -1452,10 +1386,6 @@ a:focus-visible {
 .about-story .about-now {
   color: #e1e4d5;
   font-size: 15px;
-}
-
-.about-decoration {
-  font-size: 11px;
 }
 
 .contact-section > p:not(.eyebrow) {

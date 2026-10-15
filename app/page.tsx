@@ -71,7 +71,6 @@ export default function Home() {
             <div className="forest-fern forest-fern-right">
               <i /><i /><i /><i /><i />
             </div>
-            <span className="forest-note">make room for wonder</span>
           </div>
         </section>
 
@@ -116,7 +115,6 @@ export default function Home() {
               Based in Tulsa; open to remote work and new communities.
             </p>
           </div>
-          <div className="about-decoration" aria-hidden="true">GROW<br />TOGETHER</div>
         </section>
 
         <section className="contact-section" id="contact" aria-labelledby="contact-title">
@@ -127,11 +125,15 @@ export default function Home() {
             <span />
             <span />
           </div>
-          <p className="eyebrow">For the things we make, and the people we meet</p>
+          <p className="eyebrow">Get in touch</p>
           <h2 id="contact-title">
-            Have an idea that could make someone&apos;s day a little better?
+            Let&apos;s talk.
           </h2>
-          <p>I&apos;d love to hear what you&apos;re thinking.</p>
+          <p>
+            If you have thoughts, experiences, or ideas about how technology
+            could bring people together instead of pulling them apart, I&apos;d
+            genuinely love to hear them. Feel free to send me an email or a DM.
+          </p>
           <div className="contact-links">
             <a className="contact-email" href="mailto:coleton.wheeler@gmail.com">
               coleton.wheeler@gmail.com <span aria-hidden="true">↗</span>
@@ -156,7 +158,6 @@ export default function Home() {
           </svg>
           <span>Coleton Wheeler</span>
         </a>
-        <p>Made with care, and a little bit of wonder.</p>
         <nav className="footer-socials" aria-label="Other places to find me">
           <span>Elsewhere</span>
           {socials.map((social) => (
