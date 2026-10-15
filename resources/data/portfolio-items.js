@@ -1,6 +1,6 @@
 export const portfolioItems = [
     {
-        title: "Dotto Studios Web",
+        title: "dotto digital",
         category: "Local web studio · in progress",
         art: "dotto",
         artCaption: "A city is made of its people",
@@ -8,7 +8,7 @@ export const portfolioItems = [
         role: "Sole developer and community outreach.",
         note: "Helping people discover the local places that make a community feel like home.",
         href: "https://web.dottostudios.com",
-        linkLabel: "Visit Dotto Studios Web",
+        linkLabel: "Visit dotto digital",
     },
     {
         title: "Dotto Games",
