@@ -1,14 +1,14 @@
 export const portfolioItems = [
     {
-        title: "dotto digital",
+        title: "Dotto Digital",
         category: "Digital presence partner · in progress",
         art: "dotto",
         artCaption: "A city is made of its people",
         description: "A digital presence partner for independent and local businesses, helping them be easier to find, build trust, and make it simple for customers to connect. Websites are the foundation, supported by ongoing maintenance, SEO and local search visibility, hosting, analytics, integrations, and automation that bring a business's online presence together.",
         role: "Sole developer, digital infrastructure, and community outreach.",
-        note: "Business owners focus on running their business; dotto digital handles the technology behind their online presence so they can connect with more people in their communities.",
+        note: "Business owners focus on running their business; Dotto Digital handles the technology behind their online presence so they can connect with more people in their communities.",
         href: "https://web.dottostudios.com",
-        linkLabel: "Visit dotto digital",
+        linkLabel: "Visit Dotto Digital",
     },
     {
         title: "Dotto Games",
@@ -18,6 +18,17 @@ export const portfolioItems = [
         description: "An ambitious game venture developing a prototype with a small group of contracted collaborators. The prototype is the first step toward seeking funding to make the full game.",
         role: "Building the vision and coordinating contracted collaborators.",
         note: "Early days: shaping the prototype and exploring what it could become.",
+    },
+    {
+        title: "Clock Work",
+        category: "GMTK Game Jam 2026 · Count Down",
+        art: "clockwork",
+        artCaption: "Keep it ticking, keep yourself alive",
+        description: "A four-day team game jam project about surviving on an eldritch pocket watch as it falls apart. Made for GMTK 2026's Count Down theme, it challenges players to clear rust, wind a carousel, and solve gear puzzles to keep the clock running until the final strike.",
+        role: "Director and programmer, collaborating with a team across code, art, narrative, and audio.",
+        note: "A chance to shake the rust off my game-development skills and connect with potential Dotto Games hires by making something together.",
+        href: "https://doggitoz.itch.io/clockwork",
+        linkLabel: "Play Clock Work on itch.io",
     },
     {
         title: "ValuSnap",
